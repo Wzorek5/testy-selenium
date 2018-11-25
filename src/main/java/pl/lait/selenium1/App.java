@@ -11,22 +11,11 @@ import org.openqa.selenium.remote.DesiredCapabilities;
  */
 public class App 
 {
-	static WebDriver driver;
 	
 	
     public static void main( String[] args )
     {
-    	System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
-    	DesiredCapabilities cap = DesiredCapabilities.chrome();
-    	driver = new ChromeDriver();
-    	driver.get("http://newtours.demoaut.com");
-    	String pageTitle = driver.getTitle();
-    	System.out.println(pageTitle);
-    	driver.findElement(By.linkText("SIGN-ON")).click();
-    	driver.findElement(By.name("userName")).sendKeys("Wzorek5");
-    	driver.findElement(By.name("password")).sendKeys("Stepien1");
-    	driver.findElement(By.name("login")).click();
-    	
+    		
         
     }
     
